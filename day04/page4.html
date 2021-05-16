@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 70px;
+            border-radius: 50px;
+            text-align: center;
+        }
+        li:nth-child(2n){
+            background: orange;
+        }
+        li:nth-child(2n+1){
+            background: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        #top{
+            width: 50px;
+            height: 50px;
+            background: chartreuse;
+        }
+        #total{
+            width: 800px;
+            height: 800px;
+            color: blue;
+            font: 25px 궁서 bold;
+            background-image: url(img/005.png)
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <ul>
+                <li>
+                    <a href="page4.html">회원가입</a>
+                </li>
+                <li>
+                    <a href="page5.html">제품정보</a>
+                </li>
+                <li>
+                    <a href="page6.html">게시판</a> 
+                </li>
+                <li>
+                    <a href="page7.html">장바구니</a>
+                </li>
+            </ul>
+        </div>
+        <div id="top2">
+            고정된 화면 보이는 부분
+        </div>
+        <div id="center">
+            제품 정보/상세 페이지
+        </div>
+    </div>
+</body>
+</html>
