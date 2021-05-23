@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        n1=document.getElementById('n1').value
+        n2=document.getElementById('n2').value
+        function tect() {
+            if (n1>n2) {
+                alert('n1이 더 크다')
+            } else {
+                alert('n2가 더 크다')
+            }
+        }
+    </script>
+</head>
+<body>
+    a=<input type="text" id='n1'>
+    b=<input type="text" id='n2'>
+    <button style="background: palegreen;" onclick="tect()">입력한 두 수를 비교합니다</button>
+</body>
+</html>

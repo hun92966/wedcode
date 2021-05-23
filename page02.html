@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function user() {
+            user = document.getElementById('user').value
+            if (user=='root') {
+                result1.innerHTML='<font color=red>아이디 성공</font>'
+            } else {
+                result1.innerHTML='<font color=blue>아이디 실패</font>'
+            }
+    </script>
+</head>
+<body>
+    아이디 <input type="text" id="user" onkeyup="user()">
+    <br>
+    <div id="result1"></div>
+    <hr>
+</body>
+</html>
