@@ -5,30 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function text() {
-            result.innerHTML="내가 글자"
-        }
-        function img() {
-            result.innerHTML= '<img src="img/001.png" alt="">'
-        }
-        function text2() {
-            word=document.getElementById('word').value
-            result.innerHTML='<font color=blue>+word+</font>'
-        }
-        function text3() {
-            result.innerHTML="내가 글자2"
-        }
-    </script>
+    <script src="out.js"></script>
 </head>
 <body>
-    <button style="background: palegreen;" onclick="text3()">글자추가3</button>
-    <button style="background: yellow;" onclick="text()">글자추가</button>
-    <button style="background: lime;" onclick="img()">이미지추가</button>
-    <button style="background: blanchedalmond;" onclick="text2()">글자추가2</button>
-    하고싶은말:<input type="text" id="word">
-    <hr>
-    <div id="result"></div>
-    <div id="result2"></div>
+    <h3>자바 스크립트 함수 외부에 만들기</h3>
+    <button style="background: pink;" onclick="f1()">함수1번 사용하기</button>
+    <button style="background: lime;" onclick="f2()">함수2번 사용하기</button>
 </body>
 </html>

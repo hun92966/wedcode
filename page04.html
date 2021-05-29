@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" ></script>
     <title>Document</title>
     <script>
-        function webtoon() {
-            webtoon=document.getElementById('webtoon').value
-            if (webtoon=='독립일기') {
-                web='748105'
-            } else if (webtoon=='육아일기') {
-                web='752955'
-            } else {
-                web='782346'
-            }
-            location.href='https://comic.naver.com/webtoon/list.nhn?titleId=748105&weekday=sun' +web
+        $(function () {
+            $('#pw2').keyup(function () {
+                pw1 = $('#pw1').val()
+                pw2 = $('#pw2').val()
+
+                if (pw1==pw2) {
+                    $('#d1').html('<font color=blue>똑같아요.</font>')
+                } else {
+                    $('#d1').html('<font color=red>달라요.</font>)'
+                }
+            })
+        })
     </script>
 </head>
 <body>
-    
+    패스워드 : <input type="text" id="pw1"><br>
+    패스워드 확인 : <input type="text" id="pw2"><br>
+    <hr>
+    <div id="d1"></div>
 </body>
 </html>

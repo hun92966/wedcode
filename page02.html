@@ -5,20 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        function user() {
-            user = document.getElementById('user').value
-            if (user=='root') {
-                result1.innerHTML='<font color=red>아이디 성공</font>'
-            } else {
-                result1.innerHTML='<font color=blue>아이디 실패</font>'
-            }
-    </script>
+    <script src="out2.js"></script>
 </head>
 <body>
-    아이디 <input type="text" id="user" onkeyup="user()">
-    <br>
-    <div id="result1"></div>
-    <hr>
+    <h2>이 페이지에 f3,f4 호출하기</h2>
+    <button style="background: lime;" onclick="f3()">함수 3번 사용하기</button>
+    <button style="background: seashell;" onclick="f4()">함수 4번 사용하기</button>
 </body>
 </html>
