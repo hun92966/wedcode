@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script>
+        $(function() { //익명함수
+            //b2를 눌렀을 떄 tomcat으로 비동기통신
+            $('#b2').click(function() {
+                $.ajax({
+                    url : 'http://localhost:8888',
+                    success : function() {
+                        alert('tomcat 서버 통신 성공!!')
+                    },
+                    error : function() {
+                        alert('tomcat 서버 통신 실패!!')
+                    }
+                })
+            })
+            $('#b3').click(function() {
+                
+            })
+            //b1을 눌렀을 떄 msn 사이트화 비동기통신
+            $('#b1').click(function() {
+                //b1을 클릭했을 떄 처리 내용씀.
+                //msn.com 사이트로 비동기통신
+                //성공했을 떄, 연결 성공!!
+                //실패했을 떄, 연결 실패!!
+                $.ajax({
+                    url : ' ',
+                    success : function() {
+                        alert('성공!')
+                    },
+                    error : function() {
+                        alert('실패!')
+                    }
+                })
+            })
+            
+        })
+    </script>
+</head>
+<body>
+    <button id="b1">비동기통신 확인하기</button>
+    <button id="b2">내 서버 test.html로 연결하기</button>
+</body>
+</html>
